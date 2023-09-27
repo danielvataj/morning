@@ -55,6 +55,7 @@
 		// Log the success to the console (optional)
 		console.log('Success! Data sent.');
 		
+		
 		// Fire the first Twitter conversion tracking event
 		twq('event', 'tw-ofe4v-ogmi6', {});
 		
@@ -82,10 +83,11 @@
 									</div>
 									<h1 id="text01">Become a better investor in just 5 minutes 💰</h1>
 									<h3 id="text02">Get the latest market insights + investing tips, written by our team of former Wall Street analysts and delivered to your inbox each morning.</h3>
-									<form id="form1" method="post" action="#" class="formclass">
+									<form id="form1" method="post" class="formclass" netlify-honeypot="bot-field" netlify>
 										<div class="inner">
 											<div class="field">
 												<input type="email" name="email" id="form1-email" placeholder="Email" maxlength="128" required />
+												<input type="hidden" name="bot-field" />
 											</div>
 											<div class="actions">
 												<button type="submit">Subscribe For Free</button>
